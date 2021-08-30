@@ -27,3 +27,6 @@ df['Total general'] = df['RECIBIDO'].astype(int) + df['PENDIENTE'].astype(int)
 
 # eliminamos la columna cemp_codemp del reporte
 df = df.drop(columns=['cemp_codemp'])
+
+# convertir a lista una columna de un dataframe con el encabezado 'name':
+nameList = df['name'].tolist()
