@@ -6,7 +6,6 @@ for row in df['name']:
 for i, row in df.iterrows():
     print(row['name'])
 
-
 # group by filtro_estado
 df = df.reset_index().groupby(
     ['dependencia_destino', 'cemp_nu_dni', 'cemp_codemp', 'empleado_destino', 'filtro_estado']
