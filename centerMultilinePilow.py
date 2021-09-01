@@ -19,8 +19,8 @@ def centerMultilineOnlyVertical(text, output_path):
     width, height = (400, 400)
     image = Image.new("RGB", (width, height), "grey")
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype(
-        "L:\\py2021\\python\\varios\\kids.pe01\\textToImage01\\fonts\\break-snooze\\Break Snooze.ttf", size=12)
+    fontSize = 12
+    font = ImageFont.truetype("L:\\py2021\\python\\varios\\kids.pe01\\textToImage01\\fonts\\break-snooze\\Break Snooze.ttf", size=fontSize)
     font_width, font_height = font.getsize(text)
     font_width_real, font_height1 = _widthCorrectOfTextMultiline(text, font)
     # new_width = (width - font_width) / 2
