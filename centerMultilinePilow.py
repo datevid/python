@@ -26,7 +26,8 @@ def centerMultilineOnlyVertical(text, output_path):
     # new_width = (width - font_width) / 2
     # new_height = (height - font_height) / 2
     new_width = (width - font_width_real) / 2
-    draw.multiline_text((new_width, 10), text, fill="black", align='center')
+    #draw.multiline_text((new_width, 10), text, fill="black", align='center')
+    draw.multiline_text((new_width, 10), text, (255, 255, 255), font=font, align="center")
     image.save(output_path)
 
 
