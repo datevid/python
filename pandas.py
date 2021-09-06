@@ -30,3 +30,6 @@ df = df.drop(columns=['cemp_codemp'])
 
 # convertir a lista una columna de un dataframe con el encabezado 'name':
 nameList = df['name'].tolist()
+
+#Replace NaN Values with Zeros in Pandas DataFrame
+df['DataFrame Column'] = df['DataFrame Column'].fillna(0)
