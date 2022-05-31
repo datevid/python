@@ -1,3 +1,7 @@
+#abrir un archivo
+df = pd.read_excel('E:\\descargas\\ab1.xlsx', sheet_name='Hoja1', dtype=str)
+print(df)
+
 #recorrer sólo una columna de un dataframe con el encabezado 'name':
 for row in df['name']:
     print(row)
