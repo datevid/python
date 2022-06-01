@@ -1,3 +1,4 @@
+#abrir archivo 
 import pandas as pd
 import datetime
 
@@ -8,7 +9,7 @@ def getDatetimeStr():
     return timestampStr;
 
 
-df = pd.read_excel('E:\\descargas\\ab1.xlsx', sheet_name='Hoja1', dtype=str)
+df = pd.read_excel('E:\\descargas\\sinsaltolinea.xlsx', sheet_name='Hoja1', dtype=str)
 #print(df)
 
 #recorrer sólo una columna de un dataframe con el encabezado 'name':
