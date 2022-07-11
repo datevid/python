@@ -12,3 +12,6 @@ python -m venv env
 #4. ingresar al ambiente virtual
 cd env/Scripts
 activate
+
+#para instalar las dependencias desde un archivo
+pip install -r requisitos.txt
