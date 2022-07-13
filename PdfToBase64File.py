@@ -8,7 +8,7 @@ def PdfToBase64File(filePathInput, filePathOutput):
     Convierte el archivo pdf en base64encode y el resultado lo guarda en  un archivo txt.
     Also can use the variable encodedBytes
     :param filePathInput: full path de entrada
-    :param filePathOutput: full path de salida
+    :param filePathOutput: full path de salida donde retorna B64encode
     """
     if os.path.isfile(filePathInput):
         print('File exists: ' + str(os.path.isfile(filePathInput)))
