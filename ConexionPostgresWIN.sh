@@ -1,23 +1,23 @@
-Conexion a Postgresql windows
+#Conexion a Postgresql windows
 
-1. Instalacion del ambiente virtual
+#1. Instalacion del ambiente virtual
 python -m pip install virtualenv
 
-2. ubicarse dentro del proyecto(directorio)
+#2. ubicarse dentro del proyecto(directorio)
 cd proyectonuevo
 
-3. creacion del ambiente virtual
+#3. creacion del ambiente virtual
 python -m venv env
 
-4. ingresar al ambiente virtual
+#4. ingresar al ambiente virtual
 cd env/Scripts
 activate
 
-5. instalar psycopg2 en el ambiente virtual
+#5. instalar psycopg2 en el ambiente virtual
 python -m pip install psycopg2
 
-6. crear test de conexion:
-=========================================
+#6. crear test de conexion:
+#=========================================
 # This gist contains a direct connection to a local PostgreSQL database
 # called "suppliers" where the username and password parameters are "postgres"
 
@@ -48,4 +48,4 @@ print(query_results)
 # bandwidth to other requests
 cur.close()
 conn.close()
-=========================================
+#=========================================
