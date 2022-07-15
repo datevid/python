@@ -1,6 +1,7 @@
 20+ Deep Learning Projects with Python
 see all in https://medium.com/coders-camp/230-machine-learning-projects-with-python-5d0c7abf8265
 
+
 Machine Learning Projects for Beginners
 Before moving to the complex projects in the next section, I advise you to explore these beginner-level projects if you are new to Machine Learning.
 
