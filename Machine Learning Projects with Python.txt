@@ -1,4 +1,4 @@
-20+ Deep Learning Projects with Python
+285+ Machine Learning Projects with Python
 see all in https://medium.com/coders-camp/230-machine-learning-projects-with-python-5d0c7abf8265
 
 
