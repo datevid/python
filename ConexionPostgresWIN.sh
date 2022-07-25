@@ -49,3 +49,20 @@ print(query_results)
 cur.close()
 conn.close()
 #=========================================
+#Si tienes problemas al instalar del tipo:
+"""
+Error: pg_config executable not found.
+    
+    pg_config is required to build psycopg2 from source.  Please add the directory
+    containing pg_config to the $PATH or specify the full executable path with the
+    option:
+    
+        python setup.py build_ext --pg-config /path/to/pg_config build ...
+    
+    or with the pg_config option in 'setup.cfg'.
+"""
+#debes instalar el binario
+pip install psycopg2-binary
+
+#ahora volver a intentar.
+#=========================================
