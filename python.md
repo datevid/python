@@ -1,6 +1,5 @@
 ### Instalacion del ambiente virtual
 1.Instalacion de pip
-
 ```
 sudo apt-get install python3-pip #command for Python 3
 ```
@@ -8,7 +7,6 @@ o
 ```
 sudo apt install python3-pip	#command for Python 3
 ```
-
 2. Instalacion del ambiente virtual
 ```
 python -m pip install virtualenv
