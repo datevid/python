@@ -1,8 +1,9 @@
-### Settings:
+### Settings virtual enviroment:
+install:
 ```
 python –m pip install virtualenv
 ```
-### Create virtual enviroment
+Create virtual enviroment
 
 ```
 virtualenv env
@@ -36,6 +37,6 @@ python manage.py startapp ecommerceSite
 ```
 python manage.py runserver
 ```
-### See version django
+
 
 
