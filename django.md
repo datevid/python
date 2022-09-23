@@ -34,6 +34,7 @@ django-admin startproject ecommerce-website
 python manage.py startapp ecommerceSite
 ```
 3. run server
+* enter directory project and execute
 ```
 python manage.py runserver
 ```
