@@ -29,7 +29,7 @@ python -m django version
 ```
 django-admin startproject ecommerce-website
 ```
-2. create startapp 
+2. create startapp (inner directory created)
 ```
 python manage.py startapp ecommerceSite
 ```
@@ -38,6 +38,16 @@ python manage.py startapp ecommerceSite
 ```
 python manage.py runserver
 ```
-
-
-
+### Complete Initial Project Setup Django
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+### Create a superuser
+```
+(myprojectenv) $ python manage.py createsuperuser
+```
+### Install Gunicorn and Postgres adapter in Virtual environment
+```
+(myprojectenv) $ pip install django gunicorn psycopg2-binary
+```
