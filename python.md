@@ -43,6 +43,10 @@ para salir del entorno virutal:
 ```
 deactivate
 ```
+### Instalar django
+```
+python -m pip install Django
+```
 
 ### Instalar las dependencias desde un archivo
 ```
