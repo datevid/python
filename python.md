@@ -9,9 +9,13 @@ sudo apt install python3-pip	#command for Python 3
 ```
 2. Instalacion del ambiente virtual
 ```
+pip install virtualenv
+```
+or
+```
 python -m pip install virtualenv
 ```
-En distro  ubuntu y similares:
+Distro ubuntu and similar if previus show error:
 ```
 apt install python3.8-venv
 ```
