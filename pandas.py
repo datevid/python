@@ -49,3 +49,6 @@ df['DataFrame Column'] = df['DataFrame Column'].fillna(0)
 
 #save file to excel
 df.to_excel("example"+getDatetimeStr()+".xlsx",merge_cells=False, index=False)
+
+#get total rows from dataframe# por validar
+num_rows = df.shape[0]
