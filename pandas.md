@@ -61,6 +61,36 @@ df['Total general'] = df['RECIBIDO'].astype(int) + df['PENDIENTE'].astype(int)
 ```
 more in this [blog](https://www.geeksforgeeks.org/create-a-new-column-in-pandas-dataframe-based-on-the-existing-columns/)
 
+### Add colum type object:
+```
+import pandas as pd
+#creacion de dataframe
+df = pd.DataFrame(data={'A':[1,2,3],'B':[4,5,6],'C':[7,8,9]})
+print(df)
+"""
+   A  B  C
+0  1  4  7
+1  2  5  8
+2  3  6  9
+"""
+
+
+#adicionando una nueva columna que permita almacenar objetos de cualquier tipo
+df['id_archivo']=''
+df['id_archivo'].astype('object')
+
+#adicionando datos a la nueva columna de tipo object
+lista1 = ['row1','row2']
+#df.loc[0][3]=lista1
+df['id_archivo']=[1,[1,2],3]
+print(df)
+"""
+   A  B  C id_archivo
+0  1  4  7          1
+1  2  5  8     [1, 2]
+2  3  6  9          3
+"""
+```
 
 ### remove a column
 eliminamos la columna cemp_codemp del reporte
