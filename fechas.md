@@ -3,7 +3,6 @@
 import datetime
 import pandas as pd
 
-
 def getDiasOfFechas(fechaIni,fechaFin):
     """
     obtiene las fechas de cada día en un rango de fechas indicado como parámetro
@@ -23,4 +22,15 @@ def getDiasOfFechas(fechaIni,fechaFin):
 
 diasList=getDiasOfFechas("2022-02-15","2022-03-02")
 print(diasList)
+```
+
+### Obtención de datetime año-hora-minuto-segundo
+```
+import datetime
+
+def getDatetimeStr():
+    # Converting datetime object to string
+    dateTimeObj = datetime.datetime.now()
+    timestampStr = dateTimeObj.strftime("%Y-%m-%d.%H.%M.%S")
+    return timestampStr;
 ```
