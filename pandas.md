@@ -48,6 +48,22 @@ df['PENDIENTE'].fillna(0, inplace=True)
 agrupar por algun campo y sumar las columnas no agrupadas:
 df = df.groupby(['dependencia_destino']).agg('sum')
 
+# Adicionar una columna al Dataframe
+```
+#recorrer sólo una columna de un dataframe con el encabezado 'name':
+rownew=[];
+for row in df['Columna1']:
+    print(row)
+    new_string = row.replace(';', "\n")
+    new_string=new_string.strip();
+    rownew.append(new_string)
+
+print(rownew)
+
+df['newcolum']=rownew
+print(df)
+```
+
 ### Change the Data Type of Columns
 Changet datatype to numeric:
 ```
@@ -122,4 +138,3 @@ get total rows from dataframe
 ```
 num_rows = df.shape[0]
 ```
-
