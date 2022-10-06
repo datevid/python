@@ -3,7 +3,7 @@
 import datetime
 import pandas as pd
 
-def getDiasOfFechas(fechaIni,fechaFin):
+def restarFechasList(fechaIni,fechaFin):
     """
     obtiene las fechas de cada día en un rango de fechas indicado como parámetro
     :param fechaIni: formato 2022-02-15
@@ -20,7 +20,7 @@ def getDiasOfFechas(fechaIni,fechaFin):
     return diasList;
 
 
-diasList=getDiasOfFechas("2022-02-15","2022-03-02")
+diasList=restarFechasList("2022-02-15","2022-03-02")
 print(diasList)
 ```
 
