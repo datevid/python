@@ -138,3 +138,17 @@ get total rows from dataframe
 ```
 num_rows = df.shape[0]
 ```
+
+### Get Dias transcurridos desde una fecha determinada
+```
+today = datetime.now()
+
+df = pd.read_csv('/home/doctor/dbresult/DocsPendientesYRecibidos_202210241240_1.csv')
+
+#adicionando a la columna 'fe_emi_with_format' con formato datetime
+df['fe_emi_with_format']=pd.to_datetime(df['fe_emi'],format="%Y-%m-%d %H:%M:%S.%f")
+
+#restamos y el resultado lo adicionamos a la columna dias_transcurridos
+df["dias_transcurridos"]=(today-df['fe_emi_with_format']).dt.days
+print(df)
+```
