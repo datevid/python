@@ -48,7 +48,7 @@ df['PENDIENTE'].fillna(0, inplace=True)
 agrupar por algun campo y sumar las columnas no agrupadas:
 df = df.groupby(['dependencia_destino']).agg('sum')
 
-# Adicionar una columna al Dataframe
+### Adicionar una columna al Dataframe
 ```
 #recorrer sólo una columna de un dataframe con el encabezado 'name':
 rownew=[];
@@ -133,7 +133,7 @@ save file to excel:
 df.to_excel("example"+getDatetimeStr()+".xlsx",merge_cells=False, index=False)
 ```
 
-# Get values consolidados
+### Get values consolidados
 get total rows from dataframe
 ```
 num_rows = df.shape[0]
