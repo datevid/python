@@ -58,3 +58,12 @@ pip install -r requisitos.txt
 ```
 sudo apt install python-is-python3
 ```
+### generate installer from python aplications in Windows
+execute command:
+```
+pyinstaller main.py
+```
+onefile exe:
+```
+pyinstaller --onefile main.py
+```
