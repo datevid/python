@@ -53,12 +53,12 @@ python -m pip install Django
 pip install -r requisitos.txt
 ```
 
-### how make python execute python3
+### How make python execute python3
 
 ```
 sudo apt install python-is-python3
 ```
-### generate installer from python aplications in Windows
+### Generate installer from python aplications in Windows
 execute command:
 ```
 pyinstaller main.py
