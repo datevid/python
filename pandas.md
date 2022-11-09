@@ -64,6 +64,26 @@ df['newcolum']=rownew
 print(df)
 ```
 
+### check value in Dataframe:
+```
+# check 'Ankit' exist in dataframe or not
+if 'Ankit' in df.values :
+    print("\nThis value exists in Dataframe")
+ 
+else :
+    print("\nThis value does not exists in Dataframe")
+``` 
+
+### check value in especific column of Dataframe:
+```
+# check 'Ankit' exist in dataframe or not
+if 'Ankit' in df['columZ'].values :
+    print("\nThis value exists in Dataframe")
+ 
+else :
+    print("\nThis value does not exists in Dataframe")
+```
+
 ### Change the Data Type of Columns
 Changet datatype to numeric:
 ```
