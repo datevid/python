@@ -6,10 +6,10 @@ def difDTReturnDatetimeYYYYMMDDxDay(dateIni, dateEnd):
     """
     Resta dos fechas
     obtiene las fechas de cada día en un rango de fechas indicado como parámetro
-    :param dateIni: formato 2022-02-15
-    :param dateEnd: formato 2022-03-02
+    :param dateIni: formato 2021-12-30
+    :param dateEnd: formato 2022-01-02
     :return: retorna las fechas por día en un array
-    ['2022-02-15', '2022-02-16', '2022-02-17', '2022-02-18]
+    ['2021-12-30', '2021-12-31', '2022-01-01', '2022-01-02']
     """
     start = datetime.datetime.strptime(dateIni, "%Y-%m-%d")
     end = datetime.datetime.strptime(dateEnd, "%Y-%m-%d")
@@ -47,10 +47,10 @@ def difDTReturnYears(dateIni, dateEnd):
 def getRangeDateTimeXYear(dateIni, dateEnd):
     """
     Obtiene rango de fechas por año.
-    :param dateIni: formato 2022-02-15
-    :param dateEnd: formato 2022-03-02
+    :param dateIni: formato 2021-12-30
+    :param dateEnd: formato 2022-01-02
     :return: retorna las fechas por año en un array
-    ['2022-02-15', '2022-02-16', '2022-02-17', '2022-02-18]
+    [('2021-12-30', '2021-12-31'), ('2022-01-01', '2022-01-02')]
     """
     start = datetime.datetime.strptime(dateIni, "%Y-%m-%d")
     end = datetime.datetime.strptime(dateEnd, "%Y-%m-%d")
