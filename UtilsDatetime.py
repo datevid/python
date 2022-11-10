@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 import pandas as pd
 
 class UtilsDatetime():
@@ -13,8 +13,8 @@ class UtilsDatetime():
         :return: retorna las fechas por día en un array
         ['2021-12-30', '2021-12-31', '2022-01-01', '2022-01-02']
         """
-        start = datetime.datetime.strptime(dateIni, "%Y-%m-%d")
-        end = datetime.datetime.strptime(dateEnd, "%Y-%m-%d")
+        start = datetime.strptime(dateIni, "%Y-%m-%d")
+        end = datetime.strptime(dateEnd, "%Y-%m-%d")
         date_generated = pd.date_range(start, end)
         # print(date_generated.strftime("%d-%m-%Y"))
         diasList = []
@@ -34,8 +34,8 @@ class UtilsDatetime():
         Notice: years no repeat
 
         """
-        start = datetime.datetime.strptime(dateIni, "%Y-%m-%d")
-        end = datetime.datetime.strptime(dateEnd, "%Y-%m-%d")
+        start = datetime.strptime(dateIni, "%Y-%m-%d")
+        end = datetime.strptime(dateEnd, "%Y-%m-%d")
         date_generated = pd.date_range(start, end)
 
         anios = date_generated.year;
@@ -54,8 +54,8 @@ class UtilsDatetime():
         :return: retorna las fechas por año en un array
         [('2021-12-30', '2021-12-31'), ('2022-01-01', '2022-01-02')]
         """
-        start = datetime.datetime.strptime(dateIni, "%Y-%m-%d")
-        end = datetime.datetime.strptime(dateEnd, "%Y-%m-%d")
+        start = datetime.strptime(dateIni, "%Y-%m-%d")
+        end = datetime.strptime(dateEnd, "%Y-%m-%d")
         date_generated = pd.date_range(start, end)
 
         anhos = date_generated.year;
@@ -82,6 +82,17 @@ class UtilsDatetime():
             _dateTimeList.append((_dateIni, _dateEnd))
         return _dateTimeList;
 
+    @staticmethod
+    def getYear(dtStr:str):
+        """
+        Get year of date
+        Obtiene el año de una fecha determinada
+        :param dtStr:
+        :return: retorna el año en string
+        """
+        dtObject = datetime.strptime(dtStr, "%Y-%m-%d")
+        return str(dtObject.year);
+
 
 if __name__=="__main__":
 
@@ -94,5 +105,14 @@ if __name__=="__main__":
     print(yearsList)
 
     print("Listado rango de fechas por año")
-    getRangeDateTimeXYear = UtilsDatetime.getRangeTupleDTXYearList("2021-12-30", "2022-01-02")
-    print(getRangeDateTimeXYear)
+    rangeDTTupleXYearList = UtilsDatetime.getRangeTupleDTXYearList("2021-12-30", "2022-01-02")
+    print(rangeDTTupleXYearList)
+
+    for dateIni,dateEnd in rangeDTTupleXYearList:
+        print(dateIni,dateEnd)
+
+    year=UtilsDatetime.getYear("2017-01-01")
+    print(year)
+    print(type(year))
+
+
