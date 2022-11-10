@@ -46,7 +46,7 @@ class UtilsDatetime():
         return anios
 
     @staticmethod
-    def getRangeTupleDTXYear(dateIni, dateEnd):
+    def getRangeTupleDTXYearList(dateIni, dateEnd):
         """
         Obtiene rango de fechas por año.
         :param dateIni: formato 2021-12-30
@@ -94,5 +94,5 @@ if __name__=="__main__":
     print(yearsList)
 
     print("Listado rango de fechas por año")
-    getRangeDateTimeXYear = UtilsDatetime.getRangeTupleDTXYear("2021-12-30", "2022-01-02")
+    getRangeDateTimeXYear = UtilsDatetime.getRangeTupleDTXYearList("2021-12-30", "2022-01-02")
     print(getRangeDateTimeXYear)
