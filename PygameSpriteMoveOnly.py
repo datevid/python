@@ -5,7 +5,7 @@ pygame.init()
 screen_width,screen_height=800,600
 # create a window
 window = pygame.display.set_mode((screen_width,screen_height))
-pygame.display.set_caption("Sprite pixel")
+pygame.display.set_caption("Sprite pixel by @Datevid")
 
 clock = pygame.time.Clock()
 
@@ -19,7 +19,7 @@ spriteColor = (255, 125, 125)
 spriteObj=pygame.Rect(0,0,30,30)
 spriteObj.center=(screen_width/2,screen_height/2)
 
-
+spriteSpeedX,spriteSpeedY=5,5
 # wait for the user to close the window
 while True:
     for event in pygame.event.get():
@@ -27,8 +27,12 @@ while True:
             pygame.quit()
             exit()
     
-    spriteObj.x+=10
-    spriteObj.y+=10
+    spriteObj.x+=spriteSpeedX
+    spriteObj.y+=spriteSpeedY
+    if spriteObj.bottom >=screen_height or spriteObj.top <= 0:
+        spriteSpeedY*=-1
+    if spriteObj.right >= screen_width or spriteObj.left <=0:
+        spriteSpeedX*=-1
 
     # fill the window with the background color
     window.fill(bg_color)
