@@ -28,6 +28,11 @@ def saveFileBinary(dataString, filePath):
     out_file.write(dataString)
     out_file.close()
 ```
+Example:
+```
+saveFileBinary(b'hola mundo',"savedBinaryFile.txt");
+```
+
 Read Binary File
 ```
 def readFileBinary(filePathInput):
@@ -43,7 +48,4 @@ def readFileBinary(filePathInput):
     in_file.close()
     return data;
 ```
-Example:
-```
-saveFileBinary(b'hola mundo',"savedBinaryFile.txt");
-```
+
