@@ -63,3 +63,17 @@ def getDatetimeStr():
     timestampStr = dateTimeObj.strftime("%Y-%m-%d.%H.%M.%S")
     return timestampStr;
 ```
+### Obtención de datetime año-hora-minuto-segundo formato YYYYmmdd.hh.mm.ss
+```
+import datetime
+def getDatetimeStrYYMMDD():
+    """
+    return datetime in string with format YYYYmmdd.hh.mm.ss
+    :return:
+    """
+    # Converting datetime object to string
+    dateTimeObj = datetime.now()
+    timestampStr = dateTimeObj.strftime("%Y%m%d.%H.%M.%S")
+    return timestampStr;
+```
+        
