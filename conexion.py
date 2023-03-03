@@ -76,6 +76,44 @@ def updateData(connConfig, coDepEqui: str, coDependencia):
     conn.close()
 
     
+def getLastAccessSGD(connConfig,dni):
+    """
+    obtención de un dataframe
+    :param connConfig:
+    :param dni:
+    :return:
+    """
+    # Establish a connection to the database by creating a cursor object
+    # The PostgreSQL server must be accessed through the PostgreSQL APP or Terminal Shell
+
+    # conn = psycopg2.connect("dbname=suppliers port=5432 user=postgres password=postgres")
+
+    # Or:
+    conn = psycopg2.connect(host=connConfig['host'], port=connConfig['port'],
+                            database=connConfig['database'],
+                            user=connConfig['user'], password=connConfig['password']);
+
+    # Create a cursor object
+    cur = conn.cursor()
+
+    # A sample query of all data from the "vendors" table in the "suppliers" database
+    sql = """
+    select * from accesos_de_usuario_db
+    """
+    sqlHeader = [
+        'co_local', 'localidad', 'co_Dependencia', 'dependencia',
+        'empleado', 'dni', 'tipo_empleado'
+    ];
+    cur.execute(sql.format(dni))
+    query_results = cur.fetchall()
+    df = pd.DataFrame(query_results, columns=sqlHeader)
+
+    # Close the cursor and connection to so the server can allocate
+    # bandwidth to other requests
+    cur.close()
+    conn.close()
+
+    return df;
 
 credentials = getCredetials();
 getData(credentials)
