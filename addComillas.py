@@ -9,7 +9,7 @@ Despues
 'c'
 """
 # Abrir el archivo en modo lectura
-with open('operitDeps.txt', 'r') as file:
+with open('archivo.txt', 'r') as file:
     # Crear una lista para almacenar las líneas con las comillas agregadas
     lines = []
     # Leer cada línea del archivo
@@ -23,7 +23,7 @@ with open('operitDeps.txt', 'r') as file:
         lines.append(line)
 
 # Abrir un nuevo archivo en modo escritura
-with open('operitDeps_r.txt', 'w') as file:
+with open('archivo_out.txt', 'w') as file:
     # Escribir cada línea en el nuevo archivo
     for line in lines:
         file.write(line)
