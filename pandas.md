@@ -63,7 +63,10 @@ print(rownew)
 df['newcolum']=rownew
 print(df)
 ```
-
+### Eliminar una columna del Dataframe
+```python
+df.drop('nombre_columna', axis=1, inplace=True)
+```
 ### check value in Dataframe:
 ```
 # check 'Ankit' exist in dataframe or not
