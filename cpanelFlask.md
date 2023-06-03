@@ -3,6 +3,8 @@ Si te da pereza puedes ver el video de la configuración de un proyecto en Flask
 
 https://www.youtube.com/watch?v=260eDcsUheE
 
+https://www.youtube.com/watch?v=xFxL7Mvut6g
+
 # Pasos:
 1. Crear la aplicación Setup Python App 
   - Configuracion: Aplication root: es el path de tu directorio creao
