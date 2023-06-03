@@ -6,7 +6,7 @@ https://www.youtube.com/watch?v=260eDcsUheE
 # Pasos:
 1. Crear la aplicación Setup Python App 
   - Configuracion: Aplication root: es el path de tu directorio creao
-  - Application URL: Ruta
+  - Application URL: backperulia01
   - Application startup file: siempre será app.py
   - Aplication Entry point: siempre será app
   
@@ -40,3 +40,4 @@ if __name__ == '__main__':
 
 5.  Probar
 
+http://domain.com/backperulia01/
