@@ -1,5 +1,6 @@
 # Introducción:
 Si te da pereza puedes ver el video de la configuración de un proyecto en Flask y Cpanel
+
 https://www.youtube.com/watch?v=260eDcsUheE
 
 # Pasos:
