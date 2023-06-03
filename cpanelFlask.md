@@ -10,15 +10,15 @@ https://www.youtube.com/watch?v=260eDcsUheE
   - Aplication Entry point: siempre será app
   
 2.  Instalar flask
-    Ingresar a la terminal
-    Enter to the virtual environment.To enter to virtual environment, run the command: 
-    ```
-    source /home/peruwezw/virtualenv/backperulia01/3.9/bin/activate && cd /home/peruwezw/backperulia01
-    ```
-    Instalar flask
-    ```
-    pip install flask
-    ```
+Ingresar a la terminal
+Enter to the virtual environment.To enter to virtual environment, run the command: 
+```
+source /home/peruwezw/virtualenv/backperulia01/3.9/bin/activate && cd /home/peruwezw/backperulia01
+```
+Instalar flask
+```
+pip install flask
+```
     
 4.  ir al file manager o gestor de archivos del cpanel y ubicar el proyecto. En este ejemplo backperulia01. Editar archivo app.py
 Copiar el código de testeo
