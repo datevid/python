@@ -1,6 +1,6 @@
 ### Pandas, library of Python:
 install:
-```python
+```
 pip install pandas
 ```
 
