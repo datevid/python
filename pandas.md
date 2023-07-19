@@ -80,6 +80,23 @@ else :
     print("\nThis value does not exists in Dataframe")
 ``` 
 
+### Adicionar una fila a un dataframe:
+```python
+import pandas as pd
+
+# Create an empty DataFrame
+df = pd.DataFrame()
+
+# Create a DataFrame with some columns
+df2 = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+
+# Concatenate the two DataFrames
+df = pd.concat([df, df2], axis=1, ignore_index=True)
+
+# Print the DataFrame
+print(df)
+```
+
 ### check value in especific column of Dataframe:
 ```python
 # check 'Ankit' exist in dataframe or not
@@ -178,3 +195,4 @@ df['fe_emi_with_format']=pd.to_datetime(df['fe_emi'],format="%Y-%m-%d %H:%M:%S.%
 df["dias_transcurridos"]=(today-df['fe_emi_with_format']).dt.days
 print(df)
 ```
+
