@@ -197,6 +197,8 @@ print(df)
 ```
 
 ### Validar la existencia de una columna específica de un dataframe
+
+El siguiente codigo valida si existe "COLUMN1", en caso de no tenerlo, crea la columna con valores ceros
 ```python
 # validacion de existencia de COLUMN1 y COLUMN2
     if "COLUMN1" not in df:
