@@ -196,3 +196,11 @@ df["dias_transcurridos"]=(today-df['fe_emi_with_format']).dt.days
 print(df)
 ```
 
+### Validar la existencia de una columna específica de un dataframe
+```python
+# validacion de existencia de COLUMN1 y COLUMN2
+    if "COLUMN1" not in df:
+        df["COLUMN1"] = 0
+    if "COLUMN2" not in df:
+        df["COLUMN2"] = 0
+```
