@@ -41,4 +41,9 @@ línea 3
 datosList = convertir_texto_a_lista(datos)
 
 # Imprimir los datos convertidos
-print(datosList)
+#print(datosList)
+# Imprimir los datos convertidos
+for line in datosList:
+    print(f"'{line}',")
+
+
